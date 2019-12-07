@@ -15,9 +15,9 @@ double calcOnCoderPoint(int maxPoint, int submitCount, double testAllTime, doubl
 }
 double calcOnCoderTime(int maxPoint, int submitCount, double testAllTime, double point)
 {
-	int correctionValue = 4;
-	if (correctionValue * point < maxPoint * 0.5 + 1e-6 && correctionValue * point > maxPoint * 0.5 - 1e-6)
+	if (point < maxPoint * 0.5 + 1e-6 && point > maxPoint * 0.5 - 1e-6)
 		return 1e9 - 1;
+	int correctionValue = 4;
 	double r1 = sqrt(0.1 * ((((double)maxPoint * (0.5 * (0.5 * (testAllTime*testAllTime)) * pow(0.95, submitCount - 1))) / (point / correctionValue)) - (testAllTime * testAllTime)));
 	return r1 / 60;
 }
