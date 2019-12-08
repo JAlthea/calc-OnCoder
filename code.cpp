@@ -13,6 +13,7 @@ double calcOnCoderPoint(int maxPoint, int submitCount, double testAllTime, doubl
 	double r2 = maxPoint * 0.5;
 	return r1 > r2 ? r1 : r2;
 }
+
 double calcOnCoderTime(int maxPoint, int submitCount, double testAllTime, double point)
 {
 	if (point < maxPoint * 0.5 + 1e-6 && point > maxPoint * 0.5 - 1e-6)
