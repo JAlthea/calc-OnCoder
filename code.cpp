@@ -4,6 +4,7 @@
 /* 
 코딩테스트 사이트인 온코더에서 점수 산정 방식에 따라 계산합니다.
 시간을 입력하면 예상점수를 알 수 있고, 점수를 입력하면 걸린시간을 알 수 있습니다.
+아직 정확도가 떨어집니다.
 */
 
 double calcOnCoderPoint(int maxPoint, int submitCount, double testAllTime, double problemElapsedTime)
